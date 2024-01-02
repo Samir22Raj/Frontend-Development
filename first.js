@@ -100,7 +100,7 @@ console.log('2==="2": '+(2==="2"));
 
 //Hoisting
 console.log("HOisting");
-let weather = "Sunny";
+lmainet weather = "Sunny";
 function changeWeather(){
     weather = "Rainy";
     console.log("Changed Weather to: "+weather);
