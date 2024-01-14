@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Surver Form</title>
+		<link rel="stylesheet" href="css/styles-survey form.css" />
+	</head>
+	<body>
+		<main>
+			<h1 id="title">Survey Form for free code camp</h1>
+			<p id="description">This is the survey form for free code camp</p>
+			<form id="survey-form">
+				<fieldset>
+					<label id="name-label">
+						Enter name
+						<input
+							id="name"
+							type="text"
+							placeholder="Your Name Here.."
+							required
+						/>
+					</label>
+					<label id="email-label">
+						Enter email
+						<input
+							id="email"
+							type="email"
+							placeholder="Your Email Here..."
+							required
+						/>
+					</label>
+					<label id="number-label">
+						Enter a number between 0 and 100
+						<input
+							id="number"
+							type="number"
+							min="0"
+							max="100"
+							placeholder="Enter Number Here..."
+						/>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label>
+						Education Level:
+						<select id="dropdown">
+							<option value="1">+2</option>
+							<option value="2">Bachelors</option>
+							<option value="3">Masters</option>
+						</select>
+					</label>
+				</fieldset>
+				<fieldset>
+					<label id="gender">
+                        Select Gender:
+						<input type="radio" name="gender" value="M" class="inline" />Male
+						<input type="radio" name="gender" value="F" class="inline" />Female
+						<input type="radio" name="gender" value="O" class="inline" />Others
+					</label>
+					<label id="hobbies">
+						Select Hobbies:
+						<input type="checkbox" value="1" class="inline cb" />Reading
+						<input type="checkbox" value="2" class="inline cb" />Gaming
+						<input type="checkbox" value="3" class="inline cb" />Trekking
+						<input type="checkbox" value="4" class="inline cb" />Travelling
+						<input type="checkbox" value="5" class="inline cb" />Cooking
+					</label>
+                    Wirte a short profile about yourself:
+						<textarea rows="4" cols="30"></textarea>
+					</label>
+					<label>
+				</fieldset>
+				<input id="submit" type="submit" value="Submit" />
+			</form>
+		</main>
+	</body>
+</html>
