@@ -14,6 +14,8 @@ module.exports = {
 module.exports = {
 	siteMetadata: {
 		title: "My First Gatsby Site",
+		description: "Site made using React, GraphQL and Gatsby",
+		author: "Samir",
 	},
 	plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp"],
 };
