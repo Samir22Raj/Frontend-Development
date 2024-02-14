@@ -12,5 +12,8 @@ module.exports = {
 };
 
 module.exports = {
-	plugins: ["gatsby-plugin-sass"],
+	siteMetadata: {
+		title: "My First Gatsby Site",
+	},
+	plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp"],
 };
