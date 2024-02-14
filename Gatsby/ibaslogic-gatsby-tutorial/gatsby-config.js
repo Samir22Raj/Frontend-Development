@@ -8,5 +8,9 @@
  * @type {import('gatsby').GatsbyConfig}
  */
 module.exports = {
-  plugins: [],
-}
+	plugins: [],
+};
+
+module.exports = {
+	plugins: ["gatsby-plugin-sass"],
+};
