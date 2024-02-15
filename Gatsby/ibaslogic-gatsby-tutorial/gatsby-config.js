@@ -17,5 +17,22 @@ module.exports = {
 		description: "Site made using React, GraphQL and Gatsby",
 		author: "Samir",
 	},
-	plugins: ["gatsby-plugin-sass", "gatsby-plugin-image", "gatsby-plugin-sharp"],
+	plugins: [
+		"gatsby-plugin-sass",
+		"gatsby-plugin-image",
+		"gatsby-plugin-sharp",
+		"gatsby-transformer-remark",
+		{
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "blogs",
+				path: `${__dirname}/blogs`,
+			},
+			resolve: "gatsby-source-filesystem",
+			options: {
+				name: "posts",
+				path: `${__dirname}/src/posts`,
+			},
+		},
+	],
 };

@@ -1,0 +1,1 @@
+As seen in the Explorer panel, you can also pass a number of arguments (filter, limit and skip) to your query. For instance, you can reduce the total number of results from a query by specifying the limit. Also, you can omit a number of results through the

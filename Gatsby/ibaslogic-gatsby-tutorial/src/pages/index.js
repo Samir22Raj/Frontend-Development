@@ -1,6 +1,6 @@
 import React from "react";
-import Layout from "./components/layout";
-//import Seo from "./components/seo";
+import Layout from "../components/layout";
+import Seo from "../components/seo";
 
 const Index = () => {
 	return (
@@ -12,6 +12,6 @@ const Index = () => {
 	);
 };
 
-//export const Head = () => <Seo title="Home Page" />;
-export const Head = () => <title>Home Page</title>;
+export const Head = () => <Seo title="Home Page" />;
+//export const Head = () => <title>Home Page</title>;
 export default Index;
