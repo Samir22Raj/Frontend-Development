@@ -11,10 +11,13 @@ const Seo = ({ title }) => {
 			}
 		}
 	`);
+	//using the data inside of our JSX to get the title
+	const m_title = data.site.siteMetadata.title;
+	console.log(m_title);
 
 	return (
 		<title>
-			{title} | {data.site.siteMetadata.title}
+			{title} | {m_title}
 		</title>
 	);
 };

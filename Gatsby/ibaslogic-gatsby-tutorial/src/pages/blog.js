@@ -1,6 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-import { useStaticQuery, graphql } from "gatsby";
+import { Link, useStaticQuery, graphql } from "gatsby";
 import Seo from "../components/seo";
 
 const Blog = () => {
@@ -18,6 +18,9 @@ const Blog = () => {
 							timeToRead
 							excerpt
 							id
+							fields {
+								slug
+							}
 						}
 					}
 				}
@@ -25,6 +28,10 @@ const Blog = () => {
 		`
 	);
 	console.log(staticdata);
+
+	//exporting page query should be done outside the component definition
+	//check blog-post for example of page query and query variable
+
 	return (
 		<Layout pageTitle="Blog Page">
 			<div>
@@ -33,7 +40,11 @@ const Blog = () => {
 					{staticdata.allMarkdownRemark.edges.map((edge) => {
 						return (
 							<li key={edge.node.id}>
-								<h2>{edge.node.frontmatter.title}</h2>
+								<h2>
+									<Link to={`/blog/${edge.node.fields.slug}/`}>
+										{edge.node.frontmatter.title}
+									</Link>
+								</h2>
 								<div>
 									<span>
 										Posted on {edge.node.frontmatter.date} <span> / </span>{" "}
@@ -41,6 +52,9 @@ const Blog = () => {
 									</span>
 								</div>
 								<p>{edge.node.excerpt}</p>
+								<div>
+									<Link to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
+								</div>
 							</li>
 						);
 					})}
@@ -60,21 +74,6 @@ can also use:
 if not using ul tag
 */
 
-//export page query
-// export const query = graphql`
-// 	query allPosts {
-// 		allMarkdownRemark {
-// 			nodes {
-// 				id
-// 				frontmatter {
-// 					date
-// 					slug
-// 					title
-// 				}
-// 			}
-// 		}
-// 	}
-// `;
 export const Head = () => <Seo title="Blog Page" />;
 //export const Head = () => <title>Blog page</title>;
 export default Blog;
