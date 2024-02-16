@@ -36,7 +36,7 @@ const Blog = () => {
 		<Layout pageTitle="Blog Page">
 			<div>
 				<p>Blog posts will be displayed here!</p>
-				<ul>
+				<ul className="blogs">
 					{staticdata.allMarkdownRemark.edges.map((edge) => {
 						return (
 							<li key={edge.node.id}>
