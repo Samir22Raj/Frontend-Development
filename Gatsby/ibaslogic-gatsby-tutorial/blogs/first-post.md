@@ -2,6 +2,8 @@
 title: "My First Post"
 date: "2021-07-23"
 slug: "my-first-post"
+featured: "../src/images/mountain.jpg"
+thumb: "../src/images/mountain.jpg"
 ---
 
 This is my first blog post! Isn't it _great_?

@@ -2,6 +2,8 @@ import React from "react";
 import Layout from "../components/layout";
 import { Link, useStaticQuery, graphql } from "gatsby";
 import Seo from "../components/seo";
+import * as blogStyles from "./blog.module.scss";
+import Img from "gatsby-image";
 
 const Blog = () => {
 	//using a static query
@@ -12,12 +14,19 @@ const Blog = () => {
 					edges {
 						node {
 							frontmatter {
-								title
 								date(formatString: "DD MMMM, YYYY")
+								title
+								thumb {
+									childImageSharp {
+										fluid {
+											...GatsbyImageSharpFluid
+										}
+									}
+								}
 							}
 							timeToRead
-							excerpt
 							id
+							excerpt
 							fields {
 								slug
 							}
@@ -28,7 +37,6 @@ const Blog = () => {
 		`
 	);
 	console.log(staticdata);
-
 	//exporting page query should be done outside the component definition
 	//check blog-post for example of page query and query variable
 
@@ -36,23 +44,27 @@ const Blog = () => {
 		<Layout pageTitle="Blog Page">
 			<div>
 				<p>Blog posts will be displayed here!</p>
-				<ul className="blogs">
+				<ul className={blogStyles.posts}>
 					{staticdata.allMarkdownRemark.edges.map((edge) => {
 						return (
-							<li key={edge.node.id}>
+							<li className={blogStyles.post} key={edge.node.id}>
 								<h2>
 									<Link to={`/blog/${edge.node.fields.slug}/`}>
 										{edge.node.frontmatter.title}
 									</Link>
 								</h2>
-								<div>
+								<div className={blogStyles.meta}>
 									<span>
 										Posted on {edge.node.frontmatter.date} <span> / </span>{" "}
 										{edge.node.timeToRead} min read
 									</span>
 								</div>
-								<p>{edge.node.excerpt}</p>
-								<div>
+								<Img
+									fluid={edge.node.frontmatter.thumb.childImageSharp.fluid}
+									alt={edge.node.frontmatter.title}
+								/>
+								<p className={blogStyles.excerpt}>{edge.node.excerpt}</p>
+								<div className={blogStyles.button}>
 									<Link to={`/blog/${edge.node.fields.slug}/`}>Read More</Link>
 								</div>
 							</li>
