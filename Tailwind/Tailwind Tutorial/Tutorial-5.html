@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Margins, Borders and Padding</title>
+	</head>
+	<body>
+		<div class="text-center">
+			<a class="text-blue-400 underline text-3xl" href="index.html">Home</a>
+		</div>
+
+		<div class="mx-2 bg-green-200">This is margin 2 in x-axis.</div>
+		<div class="mx-96 bg-green-500">This is margin 96 in x-axis.</div>
+		<br />
+		<b>Tailwind CSS Margin Class</b>
+		<div class="flex">
+			<div class="flex justify-center">
+				<div class="m-8 bg-green-300 w-24 h-24">
+					<div class="m-4 border-2 border-green-800 bg-green-600 w-16 h-16">
+						m-4 in m-8
+					</div>
+				</div>
+			</div>
+			<div class="flex justify-center">
+				<div class="m-8 bg-green-300 w-24 h-24">
+					<div class="-m-4 border-2 border-green-800 bg-green-600 w-16 h-16">
+						-m-4 in m-8
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="flex justify-evenly">
+			<ul
+				class="flex space-x-5 bg-green-200 border-blue-400 rounded-xl border-4"
+			>
+				<li>Space Between x-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+			<ul
+				class="flex -space-x-5 bg-green-200 border-blue-400 rounded-xl border-4"
+			>
+				<li class="pr-5">-Space Between x-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+			<ul
+				class="flex flex-row-reverse space-x-reverse space-x-5 bg-green-200 border-blue-400 rounded-xl border-4"
+			>
+				<li>Space Between x-reverse in x-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+			<ul class="space-y-5 bg-green-200 border-blue-400 rounded-xl border-4">
+				<li>Space Between y-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+			<ul
+				class="flex flex-col-reverse space-y-5 space-y-reverse bg-green-200 border-blue-400 rounded-xl border-4"
+			>
+				<li>Space Between y-reverse in y-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+			<ul class="-space-y-5 bg-green-200 border-blue-400 rounded-xl border-4">
+				<li class="pb-10">-Space Between y-5</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Home
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					About
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Gallery
+				</li>
+				<li class="border-2 border-black rounded-lg h-fit bg-green-400 p-2">
+					Contact
+				</li>
+			</ul>
+		</div>
+		<div class="flex m-4 justify-evenly">
+			<div class="mx-4 grid grid-cols-3 gap-2 bg-green-200 p-2">
+				<!-- First sub div is not for roundig-->
+				<div class="rounded-none bg-green-400 w-48 h-12">rounded-none</div>
+				<div class="rounded bg-green-400 w-48 h-12">rounded</div>
+				<div class="rounded-sm bg-green-400 w-48 h-12">rounded-sm</div>
+				<div class="rounded-md bg-green-400 w-48 h-12">rounded-md</div>
+				<div class="rounded-lg bg-green-400 w-48 h-12">rounded-lg</div>
+				<div class="rounded-xl bg-green-400 w-48 h-12">rounded-xl</div>
+			</div>
+			<div class="mx-4 grid grid-cols-2 gap-2 bg-green-200 p-2">
+				<div class="rounded-full bg-green-400 py-3 px-6">
+					rounded-full for Design Pill
+				</div>
+				<div
+					class="rounded-full ml-32 bg-green-400 h-24 w-24 flex items-center justify-center"
+				>
+					rounded-full for Circle
+				</div>
+			</div>
+			<div class="mx-4 grid grid-cols-2 gap-2 bg-green-200 p-2">
+				<!-- First sub div is not for roundig-->
+				<div class="rounded-t-lg bg-green-400 w-full h-12">rounded-t-lg</div>
+				<div class="rounded-r-lg bg-green-400 w-full h-12">rounded-r-lg</div>
+				<div class="rounded-l-lg bg-green-400 w-full h-12">rounded-l-lg</div>
+				<div class="rounded-b-lg bg-green-400 w-full h-12">rounded-b-lg</div>
+			</div>
+			<div class="mx-4 grid grid-cols-2 gap-2 bg-green-200 p-2">
+				<!-- First sub div is not for roundig-->
+				<div class="rounded-tl-lg bg-green-400 w-full h-12">rounded-tl-lg</div>
+				<div class="rounded-tr-lg bg-green-400 w-full h-12">rounded-tr-lg</div>
+				<div class="rounded-bl-lg bg-green-400 w-full h-12">rounded-bl-lg</div>
+				<div class="rounded-br-lg bg-green-400 w-full h-12">rounded-br-lg</div>
+			</div>
+		</div>
+		<div
+			class="mx-auto bg-green-200 grid grid-rows-4 grid-flow-col gap-2 text-justify p-4"
+		>
+			<p class="border-green-800 border-4 border-opacity-100 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-green-800 border-4 border-opacity-75 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-green-800 border-4 border-opacity-50 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-green-800 border-4 border-opacity-25 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-yellow-800 border-4 border-opacity-100 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-yellow-800 border-4 border-opacity-75 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-yellow-800 border-4 border-opacity-50 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-yellow-800 border-4 border-opacity-25 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-pink-800 border-4 border-opacity-100 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-pink-800 border-4 border-opacity-75 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-pink-800 border-4 border-opacity-50 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+			<p class="border-pink-800 border-4 border-opacity-25 p-2">
+				A Computer Science Portal for Geeks
+			</p>
+		</div>
+		<div class="m-4 grid grid-cols-6 gap-2 bg-green-200 p-2">
+			<!-- First sub div is not for roundig-->
+			<div
+				class="border-4 border-green-900 border-solid bg-green-400 w-full h-12"
+			>
+				border-solid
+			</div>
+
+			<div
+				class="border-4 border-green-900 border-dashed bg-green-400 w-full h-12"
+			>
+				border-dashed
+			</div>
+
+			<div
+				class="border-4 border-green-900 border-dotted bg-green-400 w-full h-12"
+			>
+				border-dotted
+			</div>
+
+			<div
+				class="border-4 border-green-900 border-double bg-green-400 w-full h-12"
+			>
+				border-double
+			</div>
+
+			<div
+				class="border-4 border-green-900 border-none bg-green-400 w-full h-12"
+			>
+				border-none
+			</div>
+
+			<div
+				class="border-4 border-green-900 border-hidden bg-green-400 w-full h-12"
+			>
+				border-hidden
+			</div>
+		</div>
+		<hr />
+		<b>Tailwind CSS Divide Width Class</b>
+		<div class="flex text-center font-bold text-md justify-around">
+			<div class="mx-4 bg-green-200 p-2 h-fit">
+				<div class="grid grid-cols-4 divide-x-4 divide-blue-500">
+					<div>Divide-x-4 in blue</div>
+					<div>GeeksforGeeks</div>
+					<div>A Computer Science Portal</div>
+					<div>For Geeks</div>
+				</div>
+			</div>
+			<div class="mx-4 bg-green-200 p-2">
+				<div
+					class="grid grid-cols-1 divide-y-4 divide-green-500 divide-opacity-50"
+				>
+					<div>Divide-y-4 and opacity-50</div>
+					<div>GeeksforGeeks</div>
+					<div>A Computer Science Portal</div>
+					<div>For Geeks</div>
+				</div>
+			</div>
+			<div class="mx-4 bg-green-200 p-2">
+				<div
+					class="flex flex-col-reverse divide-y-4 divide-y-reverse divide-green-500 divide-dotted"
+				>
+					<div>Divide-y-4 in divde-y-reverse dotted-style</div>
+					<div>GeeksforGeeks</div>
+					<div>A Computer Science Portal</div>
+					<div>For Geeks</div>
+				</div>
+			</div>
+		</div>
+		<br />
+		<b>Tailwind CSS Ring Width Class</b>
+		<div class="mx-16 grid grid-cols-6 gap-6 p-2">
+			<button
+				class="ring-0 ring-green-600 bg-green-400 ring-opacity-25 w-full h-12 rounded-lg"
+			>
+				Ring-0
+			</button>
+			<button
+				class="ring-1 ring-green-600 bg-green-400 ring-opacity-50 w-full h-12 rounded-lg"
+			>
+				Ring-1 opacity-50
+			</button>
+			<button
+				class="ring-2 ring-green-600 bg-green-400 ring-opacity-75 w-full h-12 rounded-lg"
+			>
+				Ring-2 opacity-75
+			</button>
+			<button
+				class="ring-4 ring-green-600 bg-green-400 ring-opacity-100 w-full h-12 rounded-lg"
+			>
+				Ring-4 opacity-100
+			</button>
+			<button
+				class="ring-8 bg-green-400 ring-opacity-25 w-full h-12 rounded-lg ring-blue-800"
+			>
+				Ring-8
+			</button>
+			<button
+				class="ring-4 ring-indigo-600 ring-inset bg-green-400 ring-opacity-75 w-full h-12 rounded-lg"
+			>
+				ring-inset
+			</button>
+		</div>
+		<div class="mx-16 grid grid-cols-2 gap-6 p-2">
+			<button
+				class="ring-4 ring-green-600 ring-offset-4 ring-offset-green-700 bg-green-400 ring-opacity-25 w-full h-12 rounded-lg"
+			>
+				ring-offset-4 ring-offset-green-700
+			</button>
+			<button
+				class="ring-4 ring-green-600 bg-green-400 ring-offset-4 ring-offset-blue-500 ring-opacity-25 w-full h-12 rounded-lg border-blue-800 border-4"
+			>
+				ring-offset-4 ring-offset-yellow-700
+			</button>
+		</div>
+	</body>
+</html>
