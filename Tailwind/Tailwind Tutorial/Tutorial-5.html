@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" href="style.css" />
-		<title>Margins, Borders and Padding</title>
+		<title>Margins, Borders and Padding And More</title>
 	</head>
 	<body>
 		<div class="text-center">
@@ -31,7 +31,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="flex justify-evenly">
+		<div class="flex justify-evenly flex-nowrap">
 			<ul
 				class="flex space-x-5 bg-green-200 border-blue-400 rounded-xl border-4"
 			>
@@ -322,5 +322,71 @@
 				ring-offset-4 ring-offset-yellow-700
 			</button>
 		</div>
+		<div class="w-[645px] bg-red-500 text-white m-[4px]">
+			<span class="font-bold">
+				Using Square Bracket notation to add custom width and margin to this div
+				<br />
+				&lt;div class="w-[645px] m-[4px]"&gt;
+				<br />
+			</span>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi corporis
+			nostrum totam nihil sapiente? Itaque deleniti iusto animi tempora maxime.
+		</div>
+		<b class="text-xl">
+			Responsive Design Ahead <br />Try changing screen size
+		</b>
+		<div
+			class="bg-red-600 text-white text-base sm:text-xs lg:text-xl xl:hidden sm:bg-yellow-200 sm:text-black xl:bg-green-700 lg:text-indigo-700"
+		>
+			Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+			perspiciatis voluptates, in deleniti doloribus incidunt laborum est libero
+			vel tempora?
+		</div>
+		<div class="hidden lg:block text-amber-900 bg-pink-500 text-xl">
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusamus
+			qui laudantium hic perferendis reiciendis iusto nostrum recusandae
+			provident quidem!
+		</div>
+		<div class="mx-24">
+			<b class="text-lg"
+				>Following Button contains hover, focus and other states</b
+			>
+			<button
+				class="text-white py-4 px-3 rounded-full m-4 hover:bg-purple-700 bg-sky-500 active:bg-pink-400 focus:bg-slate-500"
+			>
+				Click Me !!!
+			</button>
+		</div>
+
+		<div class="mx-6">
+			<b class="font-semibold">
+				Here are some buttons made using the @apply directive.
+			</b>
+			<button
+				type="button"
+				class="btn bg-green-700 hover:bg-green-800 focus:ring-green-300 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800"
+			>
+				Green
+			</button>
+			<button
+				type="button"
+				class="btn bg-red-600 hover:bg-red-800 focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-900"
+			>
+				Red
+			</button>
+			<button
+				type="button"
+				class="bg-yellow-400 hover:bg-yellow-500 focus:ring-yellow-300 text-center me-2 mb-2 dark:focus:ring-yellow-900 btn"
+			>
+				Yellow
+			</button>
+			<button
+				type="button"
+				class="btn bg-purple-700 hover:bg-purple-800 focus:ring-purple-300 dark:bg-purple-600 dark:hover:bg-purple-700 dark:focus:ring-purple-900"
+			>
+				Purple
+			</button>
+		</div>
+		<button class="text-white bg-sky-500 rounded-2xl p-2">Click Meow!!</button>
 	</body>
 </html>
