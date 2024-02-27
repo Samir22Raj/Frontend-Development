@@ -3,6 +3,7 @@
 
 @tailwind components;
 
+/*Will be included at this point in the CSS even if not used in the HTML file*/
 .text-white{
     color: black;
 }
@@ -10,7 +11,15 @@
 
 @tailwind utilities;
 
-.btn{
-    @apply text-white  focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-5 py-2
-    text-center me-2 mb-2;
+@layer utilities{
+    /**
+    *Will be at the end of the components layer
+    *Will only be included in the compiled CSS if it is being used in the HTML file.
+    *Can be overrrided using the utilities as it precedes the uitility layer
+    */    
+    .btn{
+        @apply text-white  focus:outline-none focus:ring-4 font-medium rounded-full text-sm px-5 py-2
+        text-center me-2 mb-2;
+    }
 }
+
