@@ -4,7 +4,9 @@
 	"description": "",
 	"main": "index.js",
 	"scripts": {
-		"start": "vite"
+		"start": "vite",
+		"build": "tailwindcss -i ./style.css -o ./css/main.css",
+		"watch": "tailwindcss -i ./style.css -o ./css/main.css --watch"
 	},
 	"keywords": [],
 	"author": "",
