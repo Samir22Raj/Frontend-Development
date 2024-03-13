@@ -669,6 +669,14 @@ video {
   vertical-align: baseline;
 }
 
+.align-middle{
+  vertical-align: middle;
+}
+
+.align-sub{
+  vertical-align: sub;
+}
+
 .font-Inter{
   font-family: Inter;
 }
