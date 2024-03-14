@@ -1,0 +1,23 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	section {
+		@apply my-6 last:mb-0;
+	}
+	h2 {
+		@apply font-Young text-3xl font-medium;
+	}
+	li {
+		@apply pl-3;
+	}
+	td {
+		@apply p-3 first:pl-8 last:font-bold;
+	}
+	tr {
+		@apply border border-White border-b-lightGrey;
+	}
+}
