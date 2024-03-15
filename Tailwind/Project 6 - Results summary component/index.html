@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png"
+		/>
+		<title>Frontend Mentor | Results summary component</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="font-Hanken text-lg">
+		<div
+			class="flex sm:justify-center sm:items-center h-screen w-screen md:w-3/4 xl:w-3/5 m-auto"
+		>
+			<main
+				class="sm:flex sm:shadow-lightSlateBlue/40 sm:shadow-2xl sm:rounded-3xl"
+			>
+				<section
+					class="flex flex-col items-center bg-gradient-to-b from-lightSlateBlue to-LightRoyalBlue text-White rounded-b-3xl sm:rounded-3xl p-8 space-y-4 sm:space-y-10 sm:w-1/2 sm:p-16"
+				>
+					<h1 class="text-White/70">Your Results</h1>
+					<div
+						class="score bg-gradient-to-b from-VioletBlue to-persianBlue rounded-full w-40 h-40 flex flex-col items-center justify-center"
+					>
+						<p class="text-6xl font-bold">76</p>
+						<p class="text-White/50 mt-2">of 100</p>
+					</div>
+					<div class="division">
+						<h2 class="font-bold text-2xl text-center">Great</h2>
+
+						<p class="text-White/70 text-center mt-2">
+							You scored higher than 65% of the people who have taken these
+							tests.
+						</p>
+					</div>
+				</section>
+				<section class="p-8 sm:w-1/2 sm:rounded-r-3xl">
+					<h2 class="font-bold text-xl">Summary</h2>
+					<div class="scores mt-6 sm:mt-10 grid space-y-4">
+						<div
+							class="flex w-full justify-between p-4 rounded-lg space-x-2 bg-lightRed/10 text-lightRed"
+						>
+							<img src="./images/icon-reaction.svg" alt="Reaction" />
+							<b class="font-bold flex-1">Reaction</b>
+							<p class="inline text-darkGrayBlue/50 font-semibold">
+								<span class="font-bold text-darkGrayBlue">80 </span>/ 100
+							</p>
+						</div>
+						<div
+							class="flex w-full justify-between p-4 rounded-lg space-x-2 bg-orangeyYellow/10 text-orangeyYellow"
+						>
+							<img src="./images/icon-memory.svg" alt="Memory" />
+							<b class="font-bold flex-1">Memory</b>
+							<p class="inline text-darkGrayBlue/50 font-semibold">
+								<span class="font-bold text-darkGrayBlue">92 </span>/ 100
+							</p>
+						</div>
+						<div
+							class="flex w-full justify-between p-4 rounded-lg space-x-2 bg-greenTeal/10 text-greenTeal"
+						>
+							<img src="./images/icon-verbal.svg" alt="Verbal" />
+							<b class="font-bold flex-1">Verbal</b>
+							<p class="inline text-darkGrayBlue/50 font-semibold">
+								<span class="font-bold text-darkGrayBlue">61 </span>/ 100
+							</p>
+						</div>
+						<div
+							class="flex w-full justify-between p-4 rounded-lg space-x-2 bg-VioletBlue/10 text-VioletBlue"
+						>
+							<img src="./images/icon-visual.svg" alt="Visual" />
+							<b class="font-bold flex-1">Visual</b>
+							<p class="inline text-darkGrayBlue/50 font-semibold">
+								<span class="font-bold text-darkGrayBlue">72 </span>/ 100
+							</p>
+						</div>
+					</div>
+					<button
+						class="bg-darkGrayBlue text-White rounded-full p-4 mt-6 sm:mt-8 w-full hover:bg-cobaltBlue"
+					>
+						Continue
+					</button>
+				</section>
+			</main>
+		</div>
+	</body>
+</html>
