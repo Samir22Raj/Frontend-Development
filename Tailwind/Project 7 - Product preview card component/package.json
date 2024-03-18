@@ -1,0 +1,20 @@
+{
+	"name": "project-7---product-preview-card-component",
+	"version": "1.0.0",
+	"description": "",
+	"main": "index.js",
+	"scripts": {
+		"start": "vite",
+		"build": "tailwindcss -i ./style.css -o ./css/main.css",
+		"watch": "tailwindcss -i ./style.css -o ./css/main.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"autoprefixer": "^10.4.18",
+		"postcss": "^8.4.36",
+		"tailwindcss": "^3.4.1",
+		"vite": "^5.1.6"
+	}
+}
